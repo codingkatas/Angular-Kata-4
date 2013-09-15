@@ -10,7 +10,7 @@ namespace('kata.home');
 
 kata.home.TodoListController = function ($scope, TodoService) {
 
-    $scope.todos = undefined; //Call the query() method on the TodoService to get data from the backend
+    $scope.todos = TodoService.query();
 
     //Reset all the todos, setting the 'done' property to 'false'
     var resetTodos = function() {
