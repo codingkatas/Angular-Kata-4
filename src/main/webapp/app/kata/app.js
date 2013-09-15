@@ -8,6 +8,7 @@
 
 namespace('kata');
 
-var kataModule = angular.module('Kata', ['ngResource']);
+//Remember to include the ngResource module. See README.MD for detalis.
+var kataModule = angular.module('Kata', []);
 
 
