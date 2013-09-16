@@ -1,6 +1,6 @@
 package codingkatas.service;
 
-public class Todo {
+public class ToDos {
 
     private int id;
     private String subject;
