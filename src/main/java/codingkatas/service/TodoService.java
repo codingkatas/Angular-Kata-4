@@ -1,5 +1,6 @@
 package codingkatas.service;
 
+import javax.inject.Inject;
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import java.util.ArrayList;
@@ -7,6 +8,10 @@ import java.util.List;
 
 @Path("/Todo")
 public class TodoService {
+
+
+    @Inject
+    TestBean testBean;
 
     private static List<Todo> todos = new ArrayList<Todo>();
 
@@ -61,6 +66,7 @@ public class TodoService {
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     public List<Todo> list() {
+        testBean.test();
         return todos;
     }
 }

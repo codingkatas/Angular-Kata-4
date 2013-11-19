@@ -8,5 +8,5 @@
 
 
 kataModule.factory('TodoService', ['$resource', function ($resource) {
-    return $resource('rest/Todo');
+    return $resource('v1/Todo');
 }]);

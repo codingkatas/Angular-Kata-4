@@ -38,7 +38,7 @@ kataModule.factory('httpInterceptor', function ($q, $rootScope) {
             $rootScope.showOverlay = false;
             return $q.reject(rejection);
         }
-    }
+    };
 });
 
 kataModule.config(['$httpProvider',
